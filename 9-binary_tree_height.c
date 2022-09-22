@@ -18,7 +18,6 @@ int max(int a, int b)
  *
  * Return: If tree is NULL, your function must return 0
  */
-
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	int x, y;
@@ -27,6 +26,5 @@ size_t binary_tree_height(const binary_tree_t *tree)
 		return (-1);
 	x = binary_tree_height(tree->left);
 	y = binary_tree_height(tree->right);
-	return max(x, y) + 1;
+	return (max(x, y) + 1);
 }
-
